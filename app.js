@@ -1,4 +1,4 @@
-var check = 5; //Check every X seconds
+var check = 30; //Check every X seconds
 var url = "http://www.apple.com/";
 var msg = "Yay! Apple.com has been updated! Mountain Lion is out!"
 
