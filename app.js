@@ -1,6 +1,6 @@
 var check = 30; //Check every X seconds
-var url = "http://www.apple.com/";
-var msg = "Yay! Apple.com has been updated! Mountain Lion is out!"
+var url = "http://example.com";
+var msg = "Yay! " + url + " has been updated!"
 
 //Don't Edit!
 
