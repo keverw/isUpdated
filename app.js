@@ -30,7 +30,8 @@ global.say = function(string)
 var hashedContent = null;
 
 var HTTPRequest = require('HTTPRequest');
-setInterval(function()
+
+function ping()
 {
 	console.log("Checking...");
 	HTTPRequest.get(url, function(status, headers, content)
@@ -57,5 +58,11 @@ setInterval(function()
 			console.log("Http Error: " + status);
 		}
 	});
-	
+}
+
+ping();
+
+setInterval(function()
+{
+	ping();
 }, check * 1000);
